@@ -1,0 +1,18 @@
+a1
+SELECT * FROM `cars`
+
+a2
+SELECT * FROM cars LEFT JOIN costumer ON cars.id=costumer.id WHERE cars.id =1
+
+a3
+SELECT * FROM cars LEFT JOIN brand ON cars.brand_id=brand.id
+
+
+b1
+INSERT INTO `costumer` (`name`, `email`, `address`) VALUES ('adit', 'adit@gmail.com', 'umbulkurung, bandar lampung');
+
+b2
+INSERT INTO `brand` (`name`) VALUES ('Nissan');
+
+
+INSERT INTO `cars` (`id`, `name`, `brand_id`, `image`, `color`, `description`, `create_time`, `update_time`, `stock`, `price`) VALUES (NULL, 'datsun', '7', 'https://imgd.aeplcdn.com/664x374/cw/ec/36449/Datsun-Go-Exterior-138944.jpg?wm=0&q=85', 'Orange', 'Performa: 67 Hp (tenaga), 104 Nm (torsi)\r\nDimensi: 3.788 mm (panjang), 1.636 mm (lebar), 1.507 mm (tinggi)\r\nJenis ban: Radial.', '', '', '3', 'Rp. 120.000.000');
